@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-bar button {
+    background-color: #f90;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.main-content, .login-form {
+    flex: 1;
+    margin: 20px;
+    min-width: 300px;
+}
+
+.main-content h2 {
+    font-size: 2em;
+}
+
+.join-button {
+    background-color: #f90;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.login-form input, .login-form select, .login-form button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.login-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Media Queries */
+
+/* Small screens (max-width: 600px) */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content, .login-form {
+        margin: 10px 0;
+    }
+
+    .main-content h2 {
+        font-size: 1.5em;
+    }
+
+    .join-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Medium screens (min-width: 601px) and (max-width: 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content, .login-form {
+        margin: 15px 0;
+    }
+
+    .main-content h2 {
+        font-size: 1.75em;
+    }
+}
+
+/* Large screens (min-width: 1025px) */
+@media (min-width: 1025px) {
+    .wrap {
+        flex-direction: row;
+    }
+
+    .main-content, .login-form {
+        margin: 20px;
+    }
+
+    .main-content h2 {
+        font-size: 2em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
